@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - UpEverythimg Test
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: WorldSelection
+    uniqueID: 2140374911
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
