@@ -21,7 +21,7 @@ public class CameraControl : MonoBehaviour
         {
             CameraOrbitalMovement(speedkeyboard);
         }
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             CameraOrbitalMouse(mouseName);
         }
@@ -29,12 +29,7 @@ public class CameraControl : MonoBehaviour
         {
             CameraOrbitalMouse("");
         }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            
-        }
     }
-
     public void CameraOrbitalMovement(int speed)
     {
         cameraOrbital.GetCinemachineComponent<CinemachineOrbitalTransposer>().m_XAxis.Value += speed * Time.deltaTime;
