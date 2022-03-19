@@ -6,14 +6,27 @@ public class CanvasRotation : MonoBehaviour
 {
     public GameObject informationCanvas;
     bool zoomInPart;
+    public bool isThisButton;
+    GameObject[] parts;
+
+    private void Start()
+    {
+        parts = GameObject.FindGameObjectsWithTag("PartTag");
+
+    }
     void Update()
     {
-        transform.forward = Camera.main.transform.forward;
 
         if (zoomInPart && Input.GetKeyDown(KeyCode.Escape))
         {
             CameraChange();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        transform.forward = Camera.main.transform.forward;
+
     }
 
 
@@ -22,9 +35,22 @@ public class CanvasRotation : MonoBehaviour
         zoomInPart = !zoomInPart;
         if (zoomInPart)
         {
+            isThisButton = true;
+
+            foreach (GameObject buttom in parts)
+            {
+                if (buttom.transform.GetChild(0).GetComponent<CanvasRotation>().isThisButton == false)
+                {
+                    buttom.gameObject.SetActive(false);
+                }
+            }
+            
+
             CinemachineVirtualCamera cameraMain = GameObject.Find("CM Principal").GetComponent<CinemachineVirtualCamera>();
             CinemachineVirtualCamera cameraToGo = gameObject.transform.parent.GetComponentInChildren<CinemachineVirtualCamera>();
             GameObject button = gameObject.transform.GetChild(0).gameObject;
+
+
 
             print(cameraToGo.gameObject.name);
 
@@ -46,6 +72,16 @@ public class CanvasRotation : MonoBehaviour
         }
         else
         {
+            foreach (GameObject buttom in parts)
+            {
+                if (buttom.transform.GetChild(0).GetComponent<CanvasRotation>().isThisButton == false)
+                {
+                    buttom.gameObject.SetActive(true);
+                }
+            }
+
+            isThisButton = false;
+
             CinemachineVirtualCamera cameraMain = GameObject.Find("CM Principal").GetComponent<CinemachineVirtualCamera>();
             CinemachineVirtualCamera cameraToGo = gameObject.transform.parent.GetComponentInChildren<CinemachineVirtualCamera>();
             GameObject button = gameObject.transform.GetChild(0).gameObject;
