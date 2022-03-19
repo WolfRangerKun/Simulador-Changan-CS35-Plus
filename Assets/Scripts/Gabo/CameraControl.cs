@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Events;
 
 public class CameraControl : MonoBehaviour
 {
     public CinemachineVirtualCamera cameraOrbital;
     public int speedkeyboard;
     public string mouseName = "Mouse X";
-    public float cameraZoom;
-    public float minCameraZoom;
+    public float cameraZoom, minCameraZoom;
+    public bool zoomActive;
+
+    public UnityEvent changeCamera, reverseChangeCamera;
 
     public void Update()
     {
@@ -29,6 +32,10 @@ public class CameraControl : MonoBehaviour
         {
             CameraOrbitalMouse("");
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CameraZoom();
+        }
     }
     public void CameraOrbitalMovement(int speed)
     {
@@ -38,11 +45,20 @@ public class CameraControl : MonoBehaviour
     {
         cameraOrbital.GetCinemachineComponent<CinemachineOrbitalTransposer>().m_XAxis.m_InputAxisName = MouseAxis;
     }
-    //public void CameraZoom()
-    //{
-    //    if(cameraOrbital.GetCinemachineComponent<CinemachineOrbitalTransposer>().m_FollowOffset.z >= minCameraZoom)
-    //    {
-    //        cameraOrbital.GetCinemachineComponent<CinemachineOrbitalTransposer>().m_FollowOffset.z += cameraZoom;
-    //    }
-    //}
+    public void CameraZoom()
+    {
+        zoomActive = !zoomActive;
+
+        if (zoomActive)
+        {
+            changeCamera?.Invoke();
+        }
+        else
+        {
+            if (!zoomActive)
+            {
+                reverseChangeCamera?.Invoke();
+            }
+        }
+    }
 }
