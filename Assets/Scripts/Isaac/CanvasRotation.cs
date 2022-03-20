@@ -8,11 +8,14 @@ public class CanvasRotation : MonoBehaviour
     bool zoomInPart;
     public bool isThisButton;
     GameObject[] parts;
+    GameObject[] mainsCameras;
 
+
+    CinemachineVirtualCamera cameraMain;
     private void Start()
     {
         parts = GameObject.FindGameObjectsWithTag("PartTag");
-
+        mainsCameras = GameObject.FindGameObjectsWithTag("MainsCamerasCM");
     }
     void Update()
     {
@@ -35,6 +38,14 @@ public class CanvasRotation : MonoBehaviour
         zoomInPart = !zoomInPart;
         if (zoomInPart)
         {
+            foreach (GameObject camera in mainsCameras)
+            {
+                if (camera.GetComponent<CameraControl>())
+                {
+                    camera.GetComponent<CameraControl>().canUse = false;
+                }
+            }
+
             isThisButton = true;
 
             foreach (GameObject buttom in parts)
@@ -44,9 +55,19 @@ public class CanvasRotation : MonoBehaviour
                     buttom.gameObject.SetActive(false);
                 }
             }
-            
 
-            CinemachineVirtualCamera cameraMain = GameObject.Find("CM Principal").GetComponent<CinemachineVirtualCamera>();
+
+            foreach (GameObject camera in mainsCameras)
+            {
+                if (camera.GetComponent<CinemachineVirtualCamera>().Priority == 1)
+                {
+                    cameraMain =  camera.GetComponent<CinemachineVirtualCamera>();
+                }
+            }
+
+            //CinemachineVirtualCamera cameraMain = GameObject.Find("CM Principal").GetComponent<CinemachineVirtualCamera>();
+
+
             CinemachineVirtualCamera cameraToGo = gameObject.transform.parent.GetComponentInChildren<CinemachineVirtualCamera>();
             GameObject button = gameObject.transform.GetChild(0).gameObject;
 
@@ -56,6 +77,7 @@ public class CanvasRotation : MonoBehaviour
 
             button.SetActive(false);
             StartCoroutine(SpawnInfo());
+            print(cameraMain.gameObject.name);
 
             cameraMain.Priority = -1;
             cameraToGo.Priority = 99;
@@ -72,6 +94,14 @@ public class CanvasRotation : MonoBehaviour
         }
         else
         {
+            foreach (GameObject camera in mainsCameras)
+            {
+                if (camera.GetComponent<CameraControl>())
+                {
+                    camera.GetComponent<CameraControl>().canUse = true;
+                }
+            }
+
             foreach (GameObject buttom in parts)
             {
                 if (buttom.transform.GetChild(0).GetComponent<CanvasRotation>().isThisButton == false)
@@ -82,7 +112,9 @@ public class CanvasRotation : MonoBehaviour
 
             isThisButton = false;
 
-            CinemachineVirtualCamera cameraMain = GameObject.Find("CM Principal").GetComponent<CinemachineVirtualCamera>();
+
+
+            //CinemachineVirtualCamera cameraMain = GameObject.Find("CM Principal").GetComponent<CinemachineVirtualCamera>();
             CinemachineVirtualCamera cameraToGo = gameObject.transform.parent.GetComponentInChildren<CinemachineVirtualCamera>();
             GameObject button = gameObject.transform.GetChild(0).gameObject;
 
@@ -92,7 +124,10 @@ public class CanvasRotation : MonoBehaviour
 
             button.SetActive(true);
             cameraToGo.Priority = -1;
-            cameraMain.Priority = 99;
+            print(cameraMain.gameObject.name);
+
+            cameraMain.Priority = 1;
+            cameraMain = null;
         }
 
     }

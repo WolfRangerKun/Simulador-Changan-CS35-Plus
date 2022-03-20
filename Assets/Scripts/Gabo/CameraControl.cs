@@ -10,32 +10,36 @@ public class CameraControl : MonoBehaviour
     public int speedkeyboard;
     public string mouseName = "Mouse X";
     public float cameraZoom, minCameraZoom;
-    public bool zoomActive;
+    public bool zoomActive, canUse;
 
     public UnityEvent changeCamera, reverseChangeCamera;
 
     public void Update()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (canUse)
         {
-            CameraOrbitalMovement(-speedkeyboard);
+            if (Input.GetKey(KeyCode.D))
+            {
+                CameraOrbitalMovement(-speedkeyboard);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                CameraOrbitalMovement(speedkeyboard);
+            }
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                CameraOrbitalMouse(mouseName);
+            }
+            else
+            {
+                CameraOrbitalMouse("");
+            }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                CameraZoom();
+            }
         }
-        if (Input.GetKey(KeyCode.A))
-        {
-            CameraOrbitalMovement(speedkeyboard);
-        }
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            CameraOrbitalMouse(mouseName);
-        }
-        else
-        {
-            CameraOrbitalMouse("");
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            CameraZoom();
-        }
+        
     }
     public void CameraOrbitalMovement(int speed)
     {
