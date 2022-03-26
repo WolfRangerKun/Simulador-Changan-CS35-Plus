@@ -3,26 +3,32 @@ using UnityEngine;
 
 public class ControlRoquerio : MonoBehaviour
 {
-    public float streng;
+    public float strengUsed, strengRandom;
     int randomNumber;
-    void Start()
+    Rigidbody rb;
+
+    RaycastMovementDetection rMD; 
+    
+    void Awake()
     {
+        rb = this.gameObject.GetComponent<Rigidbody>();
+        rMD = FindObjectOfType<RaycastMovementDetection>();
     }
 
     void Update()
     {
         if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody>().AddForce(Vector3.left * streng, ForceMode.Acceleration);
+            rb.AddForce(Vector3.left * strengUsed, ForceMode.Acceleration);
         }
 
 
         if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Rigidbody>().AddForce(Vector3.right * streng, ForceMode.Acceleration);
+            rb.AddForce(Vector3.right * strengUsed, ForceMode.Acceleration);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && rMD.win == false)
         {
             StartCoroutine(GetNumber());
             StartCoroutine(RandomForce());
@@ -42,7 +48,8 @@ public class ControlRoquerio : MonoBehaviour
             if (randomNumber > 5)
             {
 
-                print("sumandoFuerzaIZQUIERDA");
+                //print("sumandoFuerzaIZQUIERDA");
+                rb.AddForce(Vector3.left * strengRandom, ForceMode.Impulse);
                 print(randomNumber);
                 yield return new WaitForSeconds(Random.Range(2, 4));
 
@@ -51,7 +58,9 @@ public class ControlRoquerio : MonoBehaviour
             else
             {
 
-                print("sumandoFuerzaDERECHA");
+                //print("sumandoFuerzaDERECHA");
+                rb.AddForce(Vector3.right * strengRandom, ForceMode.Impulse);
+
                 print(randomNumber);
                 yield return new WaitForSeconds(Random.Range(2, 4));
 
