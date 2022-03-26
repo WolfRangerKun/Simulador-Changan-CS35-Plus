@@ -25,6 +25,22 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_697713bb0bc04f748b98a4e8bf7f8d47:
+        m_Texture: {fileID: 2800000, guid: db1d77fb929032740887c8fe52d72f22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_ae9c65497dd64d74a227af5137d8df71:
+        m_Texture: {fileID: 2800000, guid: 984bf52e827e6e14b8cb33a579662c57, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_ae9c65497dd64d74a227af5137d8df71_1:
+        m_Texture: {fileID: 2800000, guid: ab9abb7ff4ceef348b796a4b4527c96c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_ae9c65497dd64d74a227af5137d8df71_2:
+        m_Texture: {fileID: 2800000, guid: 35039c7aa369d304db8ecfdd3bbc6ce7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

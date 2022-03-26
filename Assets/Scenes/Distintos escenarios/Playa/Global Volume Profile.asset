@@ -54,7 +54,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   rotation:
     m_OverrideState: 1
-    m_Value: 283
+    m_Value: 196
     min: 0
     max: 360
   skyIntensityMode:
