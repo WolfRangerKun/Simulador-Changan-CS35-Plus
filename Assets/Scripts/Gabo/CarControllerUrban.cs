@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CarControllerUrban : MonoBehaviour
 {
@@ -10,19 +11,31 @@ public class CarControllerUrban : MonoBehaviour
     public int directionNumer;
     public float directionRay;
     public LayerMask trafficLight;
+    public bool move;
+    public UnityEvent canvasShow, canvasOut;
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-        directionNumer = 1;
     }
 
     public void Update()
     {
-        AutomaticConduction();
-        DetectionSemaforo();
+        if (Input.GetKey(KeyCode.W))
+        {
+            AutomaticDirection();
+            DetectionSemaforo();
+            move = true;
+        }
+
+
+    }
+    public void AutomaticConduction()
+    {
+        //rb.AddForce(direction * speed * Time.deltaTime);
+        //rb.velocity = direction * speed * Time.deltaTime;
     }
 
-    public void AutomaticConduction()
+    public void AutomaticDirection()
     {
         switch (directionNumer)
         {
@@ -51,14 +64,21 @@ public class CarControllerUrban : MonoBehaviour
 
     public void DetectionSemaforo()
     {
+        direction = direction * directionRay;
         RaycastHit hit;
-        //Debug.DrawLine()
-        Physics.Raycast(transform.position, direction, out hit, directionRay, trafficLight);
+        Debug.DrawRay(transform.position, direction, Color.red, directionRay);
+        if (Physics.Raycast(transform.position, direction, out hit, directionRay, trafficLight) && move)
+        {
+            directionNumer = 0;
+            direction = direction.normalized;
+            canvasShow?.Invoke();
+            move = false;
+        }
+        else
+        {
+            direction = direction.normalized;
+            canvasOut?.Invoke();
+            move = true;
+        }
     }
-
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawLine(transform.position, direction);
-    //}
 }
