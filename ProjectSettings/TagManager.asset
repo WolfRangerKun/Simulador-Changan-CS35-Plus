@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PartTag
   - MainsCamerasCM
+  - Limite
   layers:
   - Default
   - TransparentFX
