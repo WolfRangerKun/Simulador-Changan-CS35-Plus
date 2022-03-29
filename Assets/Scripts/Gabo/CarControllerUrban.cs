@@ -43,16 +43,19 @@ public class CarControllerUrban : MonoBehaviour
                 Debug.Log("hacia adelante");
                 direction = Vector3.forward;
                 rb.velocity = direction * speed * Time.deltaTime;
+                transform.eulerAngles = new Vector3(0, 0, 0);
                 break;
             case 2:
                 Debug.Log("hacia la derecha");
                 direction = Vector3.right;
                 rb.velocity = direction * speed * Time.deltaTime;
+                transform.eulerAngles = new Vector3(0, 90, 0);
                 break;
             case 3:
                 Debug.Log("hacia la izquierda");
                 direction = Vector3.left;
                 rb.velocity = direction * speed * Time.deltaTime;
+                transform.eulerAngles = new Vector3(0, -90, 0);
                 break;
         }
     }
@@ -69,10 +72,12 @@ public class CarControllerUrban : MonoBehaviour
         Debug.DrawRay(transform.position, direction, Color.red, directionRay);
         if (Physics.Raycast(transform.position, direction, out hit, directionRay, trafficLight) && move)
         {
+            //hit.collider.GetComponent<BoxCollider>();
             directionNumer = 0;
             direction = direction.normalized;
             canvasShow?.Invoke();
             move = false;
+            
         }
         else
         {
