@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 106522cd9849ca24c8f4a956f33cab3e
+  - enabled: 1
+    path: Assets/Scenes/Maquetacion Carretera.unity
+    guid: aa34184846efba249b1a94bcdd1aaf78
+  - enabled: 1
+    path: Assets/Scenes/Gabo_Scene.unity
+    guid: 8c29de05e7f754a4d8e1ed7c763f319c
+  - enabled: 1
+    path: Assets/Scenes/Maquetacion Roquerio Mecanica.unity
+    guid: 70c6503a037d58b45a5e185c73c5f473
   m_configObjects: {}
