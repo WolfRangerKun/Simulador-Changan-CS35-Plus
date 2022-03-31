@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CarControllerUrban : MonoBehaviour
 {
-    public int speed;
+    public int speed, speedNegative;
     public Rigidbody rb;
     public Vector3 direction;
     public int directionNumer;
@@ -26,13 +26,14 @@ public class CarControllerUrban : MonoBehaviour
             DetectionSemaforo();
             move = true;
         }
-
-
+        AngleConduction();
     }
-    public void AutomaticConduction()
+    public void AngleConduction()
     {
-        //rb.AddForce(direction * speed * Time.deltaTime);
-        //rb.velocity = direction * speed * Time.deltaTime;
+        if(transform.rotation.x < -15)
+        {
+            rb.velocity = -direction * 100 * Time.deltaTime;
+        }
     }
 
     public void AutomaticDirection()
@@ -41,21 +42,22 @@ public class CarControllerUrban : MonoBehaviour
         {
             case 1:
                 Debug.Log("hacia adelante");
-                direction = Vector3.forward;
+                direction = transform.TransformDirection(Vector3.forward);
                 rb.velocity = direction * speed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(0, 0, 0);
+                //rb.AddForce(direction * speed * Time.deltaTime);
+                
                 break;
             case 2:
                 Debug.Log("hacia la derecha");
                 direction = Vector3.right;
                 rb.velocity = direction * speed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(0, 90, 0);
+                //rb.AddForce(direction * speed * Time.deltaTime);
                 break;
             case 3:
                 Debug.Log("hacia la izquierda");
                 direction = Vector3.left;
                 rb.velocity = direction * speed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(0, -90, 0);
+                //rb.AddForce(direction * speed * Time.deltaTime);
                 break;
         }
     }
@@ -63,6 +65,11 @@ public class CarControllerUrban : MonoBehaviour
     public void ChangeDirection(int changeNumer)
     {
         directionNumer = changeNumer;
+    }
+
+    public void ChangeOritacion(int angle)
+    {
+        transform.eulerAngles = new Vector3(0, angle, 0);
     }
 
     public void DetectionSemaforo()
