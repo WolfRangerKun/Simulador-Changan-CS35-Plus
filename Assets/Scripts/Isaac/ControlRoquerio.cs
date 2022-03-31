@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ControlRoquerio : MonoBehaviour
 {
+    public static ControlRoquerio instance;
     public float strengUsed, strengRandom;
     int randomNumber;
     Rigidbody rb;
@@ -11,6 +12,7 @@ public class ControlRoquerio : MonoBehaviour
     
     void Awake()
     {
+        instance = this;
         rb = this.gameObject.GetComponent<Rigidbody>();
         rMD = FindObjectOfType<RaycastMovementDetection>();
     }
@@ -28,20 +30,24 @@ public class ControlRoquerio : MonoBehaviour
             rb.AddForce(Vector3.right * strengUsed, ForceMode.Acceleration);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && rMD.win == false)
-        {
-            StartCoroutine(GetNumber());
-            StartCoroutine(RandomForce());
-        }
+        //if (Input.GetKeyDown(KeyCode.Space) && rMD.win == false)
+        //{
+        //    StartCoroutine(GetNumber());
+        //    StartCoroutine(RandomForce());
+        //}
     }
 
     private void FixedUpdate()
     {
         //randomNumber = Random.Range(0, 10);
+        if (RaycastMovementDetection.instance.win == true)
+        {
+            StopAllCoroutines();
+        }
     }
 
 
-    IEnumerator RandomForce()
+    public IEnumerator RandomForce()
     {
         while (true)
         {
@@ -69,7 +75,7 @@ public class ControlRoquerio : MonoBehaviour
 
     }
 
-    IEnumerator GetNumber()
+     public IEnumerator GetNumber()
     {
         while (true)
         {
