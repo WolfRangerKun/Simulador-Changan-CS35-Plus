@@ -94,9 +94,9 @@ public class AnimationsCorrutina : MonoBehaviour
 
     IEnumerator RocasCorrutine()
     {
-        //GameObject cvCamCarretera = GameObject.Find("Cm Presentation");
-        //GameObject cvCamBth = GameObject.Find("CM vcamBlouetoodth");
-        //GameObject cvCamGame = GameObject.Find("CM vcamGAME");
+        GameObject cvCamInicio = GameObject.Find("CM Inicio");
+        GameObject cvCamPOV = GameObject.Find("CM Muestra");
+        GameObject cvCamGame = GameObject.Find("CM Game");
 
 
         GameObject thisDialogue = GameObject.Find("DialogoRocas");
@@ -105,22 +105,46 @@ public class AnimationsCorrutina : MonoBehaviour
 
         DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[0]);
 
-        yield return new WaitUntil(() => DialogueManager.intance.index == 5);
-        //cvCamCarretera.SetActive(false);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 2);
         DialogueManager.intance.HideDialogo();
-        RaycastMovementDetection.instance.start = true;
+        yield return new WaitForSeconds(.5f);
+
+        cvCamInicio.SetActive(false);
         yield return new WaitForSeconds(.7f);
+        DialogueManager.intance.index = 3;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[3]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 5);
+        DialogueManager.intance.HideDialogo();
+
+        cvCamInicio.SetActive(true);
+        cvCamPOV.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        DialogueManager.intance.index = 6;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[6]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 7);
+        DialogueManager.intance.HideDialogo();
+        yield return new WaitForSeconds(.1f);
+
+        cvCamInicio.SetActive(false);
+        yield return new WaitForSeconds(.5f);
+
+        RaycastMovementDetection.instance.start = true;
         StartCoroutine(ControlRoquerio.instance.GetNumber());
         StartCoroutine(ControlRoquerio.instance.RandomForce());
         yield return new WaitUntil(() =>RaycastMovementDetection.instance.win == true);
         StopCoroutine(ControlRoquerio.instance.GetNumber());
         StopCoroutine(ControlRoquerio.instance.RandomForce());
-        DialogueManager.intance.index = 6;
-        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[6]);
-        yield return new WaitUntil(() => DialogueManager.intance.index == 9);
+
+        cvCamInicio.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+
+        DialogueManager.intance.index = 8;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[8]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 11);
         //cvCamCarretera.SetActive(false);
         DialogueManager.intance.HideDialogo();
         //PlayerPrefs.SetInt("CargarMenu 2", 1);
+        PlayerPrefs.SetInt("CargarMenu 4", 1);
         ChangeScene.intance.CargarNivel(0);
     }
 }

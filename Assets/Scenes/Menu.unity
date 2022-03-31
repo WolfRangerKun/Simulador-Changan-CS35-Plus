@@ -428,6 +428,10 @@ MonoBehaviour:
     dialogo: Te espero para empezar.
     retrato: {fileID: 0}
   isMenu: 1
+  isOne: 1
+  isTwo: 0
+  isTree: 0
+  isFor: 0
 --- !u!4 &291606899
 Transform:
   m_ObjectHideFlags: 0
@@ -1546,6 +1550,10 @@ MonoBehaviour:
     dialogo: Apretale al nivel 2
     retrato: {fileID: 0}
   isMenu: 1
+  isOne: 0
+  isTwo: 1
+  isTree: 0
+  isFor: 0
 --- !u!4 &1172895629
 Transform:
   m_ObjectHideFlags: 0
@@ -2191,6 +2199,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917754802}
   m_CullTransparentMesh: 1
+--- !u!1 &1994626827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1994626829}
+  - component: {fileID: 1994626828}
+  m_Layer: 0
+  m_Name: DialogoMenu 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1994626828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994626827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218b0427839151a4b93da57a4c0db164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisDialogue:
+  - nombre: Changansito
+    dialogo: Eso seria todo pues
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: Espero te haya convencido de que mi compania sera la mejor
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: Y si no, tu te lo pierdes jajaja
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: Espero nos estemos viendo en alguna consecionaria.
+    retrato: {fileID: 0}
+  isMenu: 1
+  isOne: 0
+  isTwo: 0
+  isTree: 0
+  isFor: 1
+--- !u!4 &1994626829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994626827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 86.976685, y: 131.34407, z: -0.29396057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2031232937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,6 +2332,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031232937}
   m_CullTransparentMesh: 1
+--- !u!1 &2048066836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048066838}
+  - component: {fileID: 2048066837}
+  m_Layer: 0
+  m_Name: DialogoMenu 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2048066837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048066836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218b0427839151a4b93da57a4c0db164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisDialogue:
+  - nombre: Changansito
+    dialogo: Te imaginaste en la ciudad?
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: Pues deberias, con esas ayudas que doy, uff
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: Ahora, nos toca la ultima prueba...
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: Preparate
+    retrato: {fileID: 0}
+  isMenu: 1
+  isOne: 0
+  isTwo: 0
+  isTree: 1
+  isFor: 0
+--- !u!4 &2048066838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048066836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 86.976685, y: 131.34407, z: -0.29396057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2076801654
 GameObject:
   m_ObjectHideFlags: 0

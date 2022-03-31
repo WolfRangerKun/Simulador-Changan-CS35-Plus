@@ -4428,6 +4428,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canContinue: 0
+  isCarretera: 1
+  isRocas: 0
+  isCiudad: 0
 --- !u!4 &1767307354
 Transform:
   m_ObjectHideFlags: 0

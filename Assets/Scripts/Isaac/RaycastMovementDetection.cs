@@ -9,7 +9,7 @@ public class RaycastMovementDetection : MonoBehaviour
     public static RaycastMovementDetection instance;
     RaycastHit hitOne, hitTwo;
     public Transform izq, der;
-    public TextMeshPro textInScene, contador;
+    public TextMeshProUGUI textInScene, contador;
     public LayerMask layerToAct;
     Color rayColorOne, rayColorTwo;
     int uwu;

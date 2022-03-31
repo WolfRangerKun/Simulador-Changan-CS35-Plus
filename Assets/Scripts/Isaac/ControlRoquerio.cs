@@ -49,7 +49,7 @@ public class ControlRoquerio : MonoBehaviour
 
     public IEnumerator RandomForce()
     {
-        while (true)
+        while (true &&  !RaycastMovementDetection.instance.win)
         {
             if (randomNumber > 5)
             {
@@ -77,7 +77,7 @@ public class ControlRoquerio : MonoBehaviour
 
      public IEnumerator GetNumber()
     {
-        while (true)
+        while (true && !RaycastMovementDetection.instance.win)
         {
             randomNumber = Random.Range(0, 10);
             yield return new WaitForSeconds(Random.Range(5, 8));

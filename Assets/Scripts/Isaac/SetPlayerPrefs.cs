@@ -8,7 +8,10 @@ public class SetPlayerPrefs : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("CargarMenu 2", 0);
+        PlayerPrefs.SetInt("CargarMenu 3", 0);
+        PlayerPrefs.SetInt("CargarMenu 4", 0);
+
     }
 
-   
+
 }
