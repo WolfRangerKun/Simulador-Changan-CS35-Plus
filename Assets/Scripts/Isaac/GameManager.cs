@@ -52,12 +52,14 @@ public class GameManager : MonoBehaviour
 
         if (gameRunning)
         {
+            pasuePanel.SetActive(false);
 
             Time.timeScale = 1f;
 
         }
         else
         {
+            pasuePanel.SetActive(true);
 
             Time.timeScale = 0f;
         }
