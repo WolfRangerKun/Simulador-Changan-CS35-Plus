@@ -1,0 +1,736 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.3 6.3.3.8068
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Grille
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0264706 0.0264706 0.0264706
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_Grille1A.png
+map_bump 
+bump 
+map_opacity Jeep_GrandCherokeeTrackhawk_2018_Grille1Alpha.png
+map_d Jeep_GrandCherokeeTrackhawk_2018_Grille1Alpha.png
+refl 
+map_kS 
+map_kA 
+map_Ns Jeep_GrandCherokeeTrackhawk_2018_Grille1Alpha.png
+
+newmtl Grille_2
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0264706 0.0264706 0.0264706
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_Grille2A.png
+map_bump 
+bump 
+map_opacity Jeep_GrandCherokeeTrackhawk_2018_Grille2Alpha.png
+map_d Jeep_GrandCherokeeTrackhawk_2018_Grille2Alpha.png
+refl 
+map_kS 
+map_kA 
+map_Ns Jeep_GrandCherokeeTrackhawk_2018_Grille2Alpha.png
+
+newmtl Grille_3
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0264706 0.0264706 0.0264706
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_Grille3A.png
+map_bump 
+bump 
+map_opacity Jeep_GrandCherokeeTrackhawk_2018_Grille3Alpha.png
+map_d Jeep_GrandCherokeeTrackhawk_2018_Grille3Alpha.png
+refl 
+map_kS 
+map_kA 
+map_Ns Jeep_GrandCherokeeTrackhawk_2018_Grille3Alpha.png
+
+newmtl Plastique_noir
+Ka 0 0 0
+Kd 0.121569 0.121569 0.121569
+Ks 0.0328235 0.0328235 0.0328235
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Feux_chrome_text
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.241569 0.241569 0.241569
+illum 2
+Ns 32
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_LightC2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Feux_blanc
+Ka 0 0 0
+Kd 0.54902 0.54902 0.54902
+Ks 0.164706 0.164706 0.164706
+illum 2
+Ns 8
+d 0.5
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Feux_rouge
+Ka 0 0 0
+Kd 0.533333 0 0
+Ks 0.165333 0 0
+illum 2
+Ns 8
+d 0.61
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Chrome
+Ka 0 0 0
+Kd 0.384314 0.384314 0.384314
+Ks 0.311294 0.311294 0.311294
+illum 2
+Ns 16
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Phare_noir
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.00882353 0.00882353 0.00882353
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_LightC2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Partie_noir
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Clignotant
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0596078 0.0596078 0.0596078
+illum 2
+Ns 43.2193
+d 0.9
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_LightC2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Phare_LED
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0580392 0.0580392 0.0580392
+illum 2
+Ns 42.2243
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_LightC2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Phare
+Ka 0 0 0
+Kd 0.227451 0.227451 0.227451
+Ks 0.14898 0.14898 0.14898
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Phare_optique
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.156863 0.156863 0.156863
+illum 2
+Ns 64
+d 0.735
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_LightC2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Phare_vitre
+Ka 0 0 0
+Kd 0.278431 0.290196 0.294118
+Ks 0.0890981 0.0928628 0.0941177
+illum 2
+Ns 16
+d 0.4
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Feux_r_tro
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.15098 0.15098 0.15098
+illum 2
+Ns 8
+d 0.64
+map_Kd feuxblanc2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Feux_stop
+Ka 0 0 0
+Kd 0.533333 0 0
+Ks 0.165333 0 0
+illum 2
+Ns 8
+d 0.61
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Feux_red_reflect
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.110588 0.012549 0.012549
+illum 2
+Ns 8
+d 0.67
+map_Kd feuxred.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Logo
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.102353 0.102353 0.102353
+illum 2
+Ns 64
+map_Kd Trackhawk.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Motor
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0705882 0.0705882 0.0705882
+illum 2
+Ns 45.2548
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_EngineA.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_texture_2
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0172549 0.0172549 0.0172549
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_InteriorTillingA.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_texture
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0172549 0.0172549 0.0172549
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_InteriorA.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Plastique_red
+Ka 0 0 0
+Kd 0.803922 0.188235 0.188235
+Ks 0.120588 0.0282353 0.0282353
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_speed
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.00431373 0.00431373 0.00431373
+illum 2
+Ns 8
+map_Kd jeep2018speed.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_gps
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0101961 0.0101961 0.0101961
+illum 2
+Ns 8
+map_Kd jeep2018gps.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_ceinture
+Ka 0 0 0
+Kd 0.192157 0.192157 0.192157
+Ks 0.00576471 0.00576471 0.00576471
+illum 2
+Ns 12.1257
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_carbone
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.06 0.06 0.06
+illum 2
+Ns 17.1484
+map_Kd carbonOK2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Metal_alu
+Ka 0 0 0
+Kd 0.498039 0.498039 0.498039
+Ks 0.298824 0.298824 0.298824
+illum 2
+Ns 16
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_texture_3
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0172549 0.0172549 0.0172549
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_Grille3A.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_gris_texture
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.162353 0.162353 0.162353
+illum 2
+Ns 12.1257
+map_Kd alustruct.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Plastique_gris
+Ka 0 0 0
+Kd 0.360784 0.360784 0.360784
+Ks 0.0180392 0.0180392 0.0180392
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Miroir
+Ka 0 0 0
+Kd 0.254902 0.254902 0.254902
+Ks 0.152941 0.152941 0.152941
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interieur_grille_HP
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0172549 0.0172549 0.0172549
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeTrackhawk_2018_Grille6A.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Vitre
+Ka 0 0 0
+Kd 0.184314 0.235294 0.227451
+Ks 0.110588 0.141176 0.136471
+illum 2
+Ns 16
+d 0.32
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Vitre_noir
+Ka 0 0 0
+Kd 0.0392157 0.0392157 0.0392157
+Ks 0.027451 0.027451 0.027451
+illum 2
+Ns 16
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Vitre_ar
+Ka 0 0 0
+Kd 0.027451 0.0392157 0.0392157
+Ks 0.0164706 0.0235294 0.0235294
+illum 2
+Ns 16
+d 0.72
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Dessous
+Ka 0 0 0
+Kd 0.219608 0.219608 0.219608
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Metal
+Ka 0 0 0
+Kd 0.294118 0.294118 0.294118
+Ks 0.120588 0.120588 0.120588
+illum 2
+Ns 27.8576
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Body
+Ka 0 0 0
+Kd 0.439216 0.439216 0.447059
+Ks 0.298667 0.298667 0.304
+illum 2
+Ns 21.1121
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Disk
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0658824 0.0658824 0.0658824
+illum 2
+Ns 64
+map_Kd Jeep_GrandCherokeeDisk.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Jante_noir
+Ka 0 0 0
+Kd 0.180392 0.180392 0.180392
+Ks 0.0541176 0.0541176 0.0541176
+illum 2
+Ns 18.3792
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Jante_alu
+Ka 0 0 0
+Kd 0.437137 0.437137 0.437137
+Ks 0.332471 0.332471 0.332471
+illum 2
+Ns 14.9285
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Frein
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.074902 0.0615686 0.0207843
+illum 2
+Ns 64
+map_Kd freincam2.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Pneus
+Ka 0 0 0
+Kd 0.148392 0.148392 0.148392
+Ks 0.00862745 0.00862745 0.00862745
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Explorer_Default
+Ka 0.117647 0.117647 0.117647
+Kd 0.752941 0.752941 0.752941
+Ks 0.752941 0.752941 0.752941
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
