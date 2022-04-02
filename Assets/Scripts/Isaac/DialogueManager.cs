@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogoText;
     public TextMeshProUGUI nombre;
     public RawImage portrait;
+    public AudioSource clickCharacter;
     public int index;
 
     public RectTransform dialogoPanel, puntoGuia;
@@ -59,6 +60,7 @@ public class DialogueManager : MonoBehaviour
             foreach (char caracter in dialogue.dialogo)
             {
                 dialogoText.text = dialogoText.text + caracter;
+                clickCharacter.Play();
                 yield return new WaitForSeconds(.05f);
 
             }
