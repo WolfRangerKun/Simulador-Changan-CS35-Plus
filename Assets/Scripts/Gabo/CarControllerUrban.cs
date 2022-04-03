@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class CarControllerUrban : MonoBehaviour
 {
-    public int speed, speedNegative;
+    public int speed;
     public Rigidbody rb;
     public Vector3 direction;
     public int directionNumer;
