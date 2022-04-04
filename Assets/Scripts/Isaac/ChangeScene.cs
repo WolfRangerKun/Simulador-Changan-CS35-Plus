@@ -11,7 +11,7 @@ public class ChangeScene : MonoBehaviour
 
     public GameObject fondoPantallaDeCarga;
     public Slider Slider;
-    //public AudioSource musicaNivel;
+    public AudioSource musicaNivel;
 
     private void Awake()
     {
@@ -47,7 +47,7 @@ public class ChangeScene : MonoBehaviour
         //
         //SetactiveFalse
         //
-        //StartCoroutine(GameManager.instance.StartFade(musicaNivel, 2, .1f));
+        StartCoroutine(GameManager.instance.StartFade(musicaNivel, 2, .1f));
         fondoPantallaDeCarga.SetActive(true);
 
         while (!Operation.isDone)
