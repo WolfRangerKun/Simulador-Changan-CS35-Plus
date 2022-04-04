@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class RaycastMovementDetection : MonoBehaviour
@@ -10,6 +11,8 @@ public class RaycastMovementDetection : MonoBehaviour
     RaycastHit hitOne, hitTwo;
     public Transform izq, der;
     public TextMeshProUGUI textInScene, contador;
+    public GameObject marcoContador;
+    public Image guiaImage;
     public LayerMask layerToAct;
     Color rayColorOne, rayColorTwo;
     int uwu;
@@ -74,9 +77,9 @@ public class RaycastMovementDetection : MonoBehaviour
                 {
                     //if (lol)
                     {
-                        textInScene.color = Color.green;
-                        textInScene.text = "VasBien";
-
+                        //textInScene.color = Color.green;
+                        //textInScene.text = "VasBien";
+                        guiaImage.color = new Color(0.6534682f,1, 0.6273585f,1);
                         StartCoroutine(CuentaAtras());
                         lol = false;
                         print("uwu1");
@@ -92,8 +95,12 @@ public class RaycastMovementDetection : MonoBehaviour
                     if (!lol)
                     {
                         StopAllCoroutines();
-                        textInScene.color = Color.red;
-                        textInScene.text = "VasMal";
+                        ////
+                        //textInScene.color = Color.red;
+                        ////
+                        guiaImage.color = new Color(1,0, 0,1);
+                        ///
+                        //textInScene.text = "VasMal";
                         contador.text = "x";
                         uwu = 10;
                         lol = true;

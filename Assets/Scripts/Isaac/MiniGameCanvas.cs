@@ -13,6 +13,7 @@ public class MiniGameCanvas : MonoBehaviour
 
     public Transform raycastOrigin;
     public GameObject autoFrente;
+    public SpriteRenderer camino;
     public Vector2 autoFrenteOriginalPOs;
 
     public Rigidbody2D cs35;
@@ -27,7 +28,7 @@ public class MiniGameCanvas : MonoBehaviour
     }
     void Start()
     {
-        autoFrenteOriginalPOs = autoFrente.transform.position;
+        //autoFrenteOriginalPOs = autoFrente.transform.position;
     }
 
     // Update is called once per frame
@@ -91,7 +92,8 @@ public class MiniGameCanvas : MonoBehaviour
     {
         if (other.CompareTag("Limite"))
         {
-            other.GetComponent<SpriteRenderer>().color = Color.red;
+            camino.color = Color.red;
+
             if (DialogueManager.intance.dialogoPanel.position != DialogueManager.intance.puntoGuia.position)
             {
                 DialogueManager.intance.index = 0;
@@ -105,7 +107,8 @@ public class MiniGameCanvas : MonoBehaviour
     {
         if (other.CompareTag("Limite"))
         {
-            other.GetComponent<SpriteRenderer>().color = Color.white;
+            camino.color = Color.white;
+            DialogueManager.intance.HideDialogo();
 
         }
     }

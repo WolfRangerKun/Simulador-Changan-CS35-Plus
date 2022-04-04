@@ -46,7 +46,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogoText.text = "";
         dialogoPanel.DOMove(puntoGuia.position, .5f);
-        nombre.text = dialogue.nombre;
+        //nombre.text = dialogue.nombre;
         StartCoroutine(LetrasDeAPoco());
 
         //dialogoText.text = dialogue.dialogo;

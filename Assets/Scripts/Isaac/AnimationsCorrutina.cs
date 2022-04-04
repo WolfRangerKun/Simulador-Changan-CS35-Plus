@@ -5,6 +5,8 @@ using UnityEngine;
 public class AnimationsCorrutina : MonoBehaviour
 {
     public bool canContinue, isCarretera, isRocas, isCiudad;
+    public GameObject guiaVisual ;
+
     void Start()
     {
         if (isCarretera)
@@ -98,6 +100,8 @@ public class AnimationsCorrutina : MonoBehaviour
         GameObject cvCamPOV = GameObject.Find("CM Muestra");
         GameObject cvCamGame = GameObject.Find("CM Game");
 
+        GameObject rc = GameObject.Find("Rocas");
+        GameObject anim = GameObject.Find("MasterAnim");
 
         GameObject thisDialogue = GameObject.Find("DialogoRocas");
         yield return new WaitForSeconds(2);
@@ -125,13 +129,27 @@ public class AnimationsCorrutina : MonoBehaviour
         DialogueManager.intance.HideDialogo();
         yield return new WaitForSeconds(.1f);
 
-        cvCamInicio.SetActive(false);
-        yield return new WaitForSeconds(.5f);
 
+        cvCamInicio.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        guiaVisual.SetActive(true);
+        RaycastMovementDetection.instance.marcoContador.gameObject.SetActive(true);
+
+        RaycastMovementDetection.instance.contador.gameObject.SetActive(true);
+        rc.GetComponent<Animator>().SetInteger("State", 1);
+        yield return new WaitForSeconds(.5f);
+        anim.GetComponent<Animator>().SetInteger("Started", 1);
+        yield return new WaitForSeconds(.5f);
         RaycastMovementDetection.instance.start = true;
+
         StartCoroutine(ControlRoquerio.instance.GetNumber());
         StartCoroutine(ControlRoquerio.instance.RandomForce());
         yield return new WaitUntil(() =>RaycastMovementDetection.instance.win == true);
+        guiaVisual.SetActive(false);
+        RaycastMovementDetection.instance.contador.gameObject.SetActive(false);
+        RaycastMovementDetection.instance.marcoContador.gameObject.SetActive(false);
+
+
         StopCoroutine(ControlRoquerio.instance.GetNumber());
         StopCoroutine(ControlRoquerio.instance.RandomForce());
 
