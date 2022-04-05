@@ -81,7 +81,7 @@ public class AnimationsCorrutina : MonoBehaviour
         MiniGameCanvas.instance.canUse = true;
         StartCoroutine(MiniGameCanvas.instance.RamdomAutoX());
 
-        yield return new WaitForSeconds(60);
+        yield return new WaitForSeconds(40);
         print("dialogo de termino");
         ///// falta hacer el final pal menu
         MiniGameCanvas.instance.canUse = false;
@@ -90,8 +90,12 @@ public class AnimationsCorrutina : MonoBehaviour
         DialogueManager.intance.HideDialogo();
 
         StopCoroutine(MiniGameCanvas.instance.RamdomAutoX());
-
+        GameObject limites = GameObject.Find("LimitesF");
+        GameObject ray = GameObject.Find("RayOrigin");
+        limites.SetActive(false);
+        ray.SetActive(false);
         DialogueManager.intance.dialogos = thisDialogue.GetComponent<Dialogos>().thisDialogue;
+
         DialogueManager.intance.index = 23;
         DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[23]);
         yield return new WaitUntil(() => DialogueManager.intance.index == 26);
@@ -198,38 +202,48 @@ public class AnimationsCorrutina : MonoBehaviour
 
         cvCamInicio.SetActive(false);
         yield return new WaitForSeconds(.7f);
-        DialogueManager.intance.index = 3;
-        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[3]);
-        yield return new WaitUntil(() => DialogueManager.intance.index == 5);
+        DialogueManager.intance.index = 4;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[4]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 6);
         DialogueManager.intance.HideDialogo();
 
         cvCamInicio.SetActive(true);
         yield return new WaitForSeconds(1f);
-        DialogueManager.intance.index = 6;
-        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[6]);
-        yield return new WaitUntil(() => DialogueManager.intance.index == 7);
+        DialogueManager.intance.index = 7;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[7]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 8);
         DialogueManager.intance.HideDialogo();
         yield return new WaitForSeconds(.1f);
 
-
+        cvCamRueda.SetActive(false);
         cvCamInicio.SetActive(false);
         yield return new WaitForSeconds(1f);
         guiaVisual.SetActive(true);
-        RaycastMovementDetection.instance.marcoContador.gameObject.SetActive(true);
 
-        RaycastMovementDetection.instance.contador.gameObject.SetActive(true);
         yield return new WaitForSeconds(.5f);
-        yield return new WaitForSeconds(.5f);
-        RaycastMovementDetection.instance.start = true;
-
-        //yield return new WaitUntil(() => RaycastMovementDetection.instance.win == true);
-
+        DialogueManager.intance.index = 9;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[9]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 13);
+        DialogueManager.intance.HideDialogo();
+        yield return new WaitForSeconds(.1f);
+        yield return new WaitUntil(() => GameManagerGabo.instance.contadorPunto == 1);
+        // llega al punto A
         cvCamInicio.SetActive(true);
         yield return new WaitForSeconds(1.2f);
 
-        DialogueManager.intance.index = 8;
-        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[8]);
-        yield return new WaitUntil(() => DialogueManager.intance.index == 11);
+        DialogueManager.intance.index = 14;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[14]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 17);
+        cvCamInicio.SetActive(false);
+
+        yield return new WaitUntil(() => GameManagerGabo.instance.contadorPunto == 2);
+        //llega punto B
+
+        cvCamInicio.SetActive(true);
+
+        DialogueManager.intance.index = 18;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[18]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 21);
         //cvCamCarretera.SetActive(false);
         DialogueManager.intance.HideDialogo();
         //PlayerPrefs.SetInt("CargarMenu 2", 1);

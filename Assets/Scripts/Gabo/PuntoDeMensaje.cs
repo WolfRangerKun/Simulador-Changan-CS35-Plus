@@ -11,7 +11,7 @@ public class PuntoDeMensaje : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManagerGabo.contadorPunto++;
+            GameManagerGabo.instance.AddIntContador();
             Punto1();
         }
     }

@@ -228,7 +228,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &46345329
 MonoBehaviour:
@@ -348,12 +348,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53022485}
-  m_LocalRotation: {x: 0.13052596, y: -1.519522e-11, z: -1.1541937e-10, w: 0.99144495}
-  m_LocalPosition: {x: -9.31, y: 29.384998, z: 15.943}
-  m_LocalScale: {x: 0.112879604, y: 2.8833077, z: 2.0598}
+  m_LocalRotation: {x: -0, y: -0, z: -1.0842021e-18, w: 1}
+  m_LocalPosition: {x: 3.7207706, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 935090342}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1001 &64281184
 PrefabInstance:
@@ -915,7 +915,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &134873236
 GameObject:
@@ -1556,7 +1556,7 @@ Transform:
   m_LocalScale: {x: 0.9636313, y: 3.530009, z: 0.33085668}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &193889905
 GameObject:
@@ -1943,8 +1943,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297897787}
   m_LocalRotation: {x: 0.13052596, y: -1.519522e-11, z: -1.1541937e-10, w: 0.99144495}
-  m_LocalPosition: {x: -9.518, y: 29.559, z: 15.943}
-  m_LocalScale: {x: 0.044967357, y: 0.12346197, z: 1.017938}
+  m_LocalPosition: {x: -9.518, y: 29.693, z: 15.943}
+  m_LocalScale: {x: 0.044967357, y: 0.10549346, z: 1.017938}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -2063,10 +2063,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: w
+  m_text: 10mts
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 926b7a4332d7a2a4aa0e4e89d9f434f2, type: 2}
+  m_sharedMaterial: {fileID: 4171283184450881934, guid: 926b7a4332d7a2a4aa0e4e89d9f434f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2090,8 +2090,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 31.4
+  m_fontSizeBase: 31.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2154,7 +2154,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4171283184450881934, guid: 926b7a4332d7a2a4aa0e4e89d9f434f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2188,11 +2188,11 @@ RectTransform:
   m_LocalScale: {x: 0.089790195, y: 0.089790195, z: 0.089790195}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.92, y: 29.273}
+  m_AnchoredPosition: {x: -11.9, y: 29.273}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &343613145
@@ -3517,7 +3517,7 @@ RectTransform:
   - {fileID: 1824226581}
   - {fileID: 440361907}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 12.524, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3552,7 +3552,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704954326
 GameObject:
@@ -3923,24 +3923,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limiteLateral:
   - nombre: Changansito
-    dialogo: Ehh cuidado
+    dialogo: "\xA1Cuidado!"
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Vuelve a la pista
+    dialogo: Volvamos al carril.
     retrato: {fileID: 0}
   limiteChoque:
   - nombre: Changansito
-    dialogo: OeOe, fijate
+    dialogo: Ey, fijate bien.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Mejor vamos para atras
+    dialogo: Tomemos distancia.
     retrato: {fileID: 0}
   raycastOrigin: {fileID: 596758594}
   autoFrente: {fileID: 833280042}
   camino: {fileID: 297897788}
   autoFrenteOriginalPOs: {x: 0, y: 0}
   cs35: {fileID: 767019511}
-  velocity: 1
+  velocity: 0.6
   distanciaLive: {fileID: 339820136}
   canUse: 0
 --- !u!1 &773802024
@@ -4002,8 +4002,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 858aa8179c996a444a1e2a058ca7c4c6, type: 2}
+  m_sharedMaterial: {fileID: -5837160071738268298, guid: 858aa8179c996a444a1e2a058ca7c4c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4027,8 +4027,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4207,7 +4207,7 @@ Transform:
   m_Children:
   - {fileID: 117046507}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1 &833576807
 GameObject:
@@ -4387,12 +4387,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840489053}
-  m_LocalRotation: {x: 0.13052596, y: -1.519522e-11, z: -1.1541937e-10, w: 0.99144495}
-  m_LocalPosition: {x: -9.73, y: 29.384998, z: 15.943}
-  m_LocalScale: {x: 0.112879604, y: 2.8833077, z: 2.0598}
+  m_LocalRotation: {x: -0, y: -0, z: -1.0842021e-18, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 935090342}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1 &879621725
 GameObject:
@@ -4498,7 +4498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912053626
 GameObject:
@@ -4698,7 +4698,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &925672953
 GameObject:
@@ -4932,6 +4932,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &935090341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 935090342}
+  m_Layer: 0
+  m_Name: LimitesF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &935090342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935090341}
+  m_LocalRotation: {x: 0.13052596, y: -1.519522e-11, z: -1.1541937e-10, w: 0.99144495}
+  m_LocalPosition: {x: -9.73, y: 29.384998, z: 15.943}
+  m_LocalScale: {x: 0.112879604, y: 2.8833075, z: 2.0598}
+  m_Children:
+  - {fileID: 840489056}
+  - {fileID: 53022488}
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947010654
 GameObject:
@@ -5268,7 +5300,7 @@ Transform:
   m_LocalScale: {x: 0.9636313, y: 3.530009, z: 0.33085668}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045800950
 GameObject:
@@ -6561,7 +6593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 195, y: 20}
+  m_AnchoredPosition: {x: 150.3, y: 20}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1372002650
@@ -6586,8 +6618,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MENU
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 858aa8179c996a444a1e2a058ca7c4c6, type: 2}
+  m_sharedMaterial: {fileID: -5837160071738268298, guid: 858aa8179c996a444a1e2a058ca7c4c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6611,8 +6643,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 34.8
+  m_fontSizeBase: 34.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6853,7 +6885,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47efad6d3866bb44cb21b62c2a4dc5d5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.079
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6949,7 +6981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447495221
 GameObject:
@@ -7176,8 +7208,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Salir
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 858aa8179c996a444a1e2a058ca7c4c6, type: 2}
+  m_sharedMaterial: {fileID: -5837160071738268298, guid: 858aa8179c996a444a1e2a058ca7c4c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7201,8 +7233,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8493,7 +8525,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1721062189
 GameObject:
@@ -8970,7 +9002,7 @@ Transform:
   m_Children:
   - {fileID: 1809536485}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1783297947
 PrefabInstance:
@@ -9077,87 +9109,85 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisDialogue:
   - nombre: Changansito
-    dialogo: Hola amigo, soy yo denuevo
+    dialogo: "Hola futuro due\xF1o."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Me gustaria que vieras algunas cosas mias.
+    dialogo: Una de las cosas que debes saber de mi es que soy ecologco.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Por ejemplo, soy un auto que ayuda al medio ambiente, pues *explicaion
-      resumida*
+    dialogo: "Pues el como funciona mi motor logra una menor contaminaci\xF3n."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Y no solo eso tengo de bueno
+    dialogo: Y, no solo tengo eso de interesante
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Vamos adentro
+    dialogo: Vamos dentro mio.
     retrato: {fileID: 0}
   - nombre: Changansito
     dialogo: 5
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Mira, tengo la mea tecno
+    dialogo: Como puedes ver, tengo pantallas en mi tablero.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Puedes *caracteristicas perras*
+    dialogo: "Aqu\xED, podras desde monitoriarme, hasta personalizarme."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Probemos conectando tu celular
+    dialogo: Y que mejor que conectando tu celular.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Ve a configuracion, y apreta bluetuh para conectar tu telefono
+    dialogo: Ahi alfrente tienes el boton de Bluetooth, apretalo.
     retrato: {fileID: 0}
   - nombre: Changansito
     dialogo: 10
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Genial, ahora puedes escuchar musica
+    dialogo: "Genial, ahora la podr\xE1s disfrutar de GPS y musica personalizada."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Que chido
+    dialogo: Lo mejor para un viaje comodo.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Bueno, vamos a ver algo importante que te ayudara en carretera
+    dialogo: Ahora, vayamos a ver otra pantalla que tengo.
     retrato: {fileID: 0}
   - nombre: Changansito
     dialogo: 14
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Aqui puedes ver la distintas funciones del estado del auto
+    dialogo: En esta se puede apreciar el estado de mis funciones basicas.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: pero esta es la mas importante de aqui
+    dialogo: "Pero, la que te muestro, seguro te salvar\xE1."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: con esta podras medir la disatncia del auto del frente y no salirte
-      d eutu pista
+    dialogo: Este sistema te muestra la distancia con el auto del frente.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Asi que por si llegas a bajar la cabeza, te avisare sin falta
+    dialogo: Y evita que salgas de la pista, todo en un solo lugar.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: que tal si hacemos un ejercicio de confianza
+    dialogo: Que te parece si hacemos un ejercicio de confianza.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: tu conduce por esta pantalla un rato, veras que sirve mucho
+    dialogo: Tu conduce por esta pantalla por 40 segundos.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Muevete con... no choques jaja
+    dialogo: "Manten la distancia y no salgas de la pista. \xA1Vamos!"
     retrato: {fileID: 0}
   - nombre: Changansito
     dialogo: 22
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Bueno, que te paresio, a que es util la cosa
+    dialogo: "Que te pareci\xF3, \xBFempiezas a confiar en m?"
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: A mi me gusta bastante jaja, ya que puedes confiar en mi
+    dialogo: "Pues yo en ti s\xED, que es lo importante."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Bueno, que tal si vamos a otro lado para ver otras cosas interesantes...
+    dialogo: "Bueno, que tal se vamos al men\xFA."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Bueno, que tal si vamos a otro lado para ver otras cosas interesantes...
+    dialogo: "Te debo mostrar m\xE1s cosas."
     retrato: {fileID: 0}
   isMenu: 0
   isOne: 0
@@ -9514,7 +9544,7 @@ RectTransform:
   - {fileID: 1239875631}
   - {fileID: 1889742286}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10206,7 +10236,7 @@ Transform:
   m_LocalScale: {x: 9.224883, y: 0.33085668, z: 0.33085668}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1944153091
 GameObject:
@@ -10387,6 +10417,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2009762320}
   m_CullTransparentMesh: 1
+--- !u!1 &2016748315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016748318}
+  - component: {fileID: 2016748317}
+  - component: {fileID: 2016748316}
+  m_Layer: 0
+  m_Name: Limite abajo (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2016748316
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016748315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &2016748317
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016748315}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2016748318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016748315}
+  m_LocalRotation: {x: 0.13052596, y: -1.519522e-11, z: -1.1541937e-10, w: 0.99144495}
+  m_LocalPosition: {x: -9.51, y: 30.783, z: 15.649}
+  m_LocalScale: {x: 9.224883, y: 0.33085668, z: 0.33085668}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2057733185
 GameObject:
   m_ObjectHideFlags: 0

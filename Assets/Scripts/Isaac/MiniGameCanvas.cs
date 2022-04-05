@@ -121,24 +121,24 @@ public class MiniGameCanvas : MonoBehaviour
         {
             
 
-            yield return new WaitForSeconds(Random.Range(6, 10));
+            yield return new WaitForSeconds(Random.Range(4, 6));
 
             if (autoFrente.transform.position.y >= autoFrenteOriginalPOs.y + 10)
             {
-                up = -2;
+                up = -1;
             }
             else
             {
-                up = 2;
+                up = 1;
             }
 
-            if (autoFrente.transform.position.y <= autoFrenteOriginalPOs.y - 20)
+            if (autoFrente.transform.position.y <= autoFrenteOriginalPOs.y - 10)
             {
-                down = 2;
+                down = 1;
             }
             else
             {
-                down = -2;
+                down = -1;
             }
 
             autoFrente.GetComponent<Rigidbody2D>().AddForce(Vector2.up * Random.Range(down, up), ForceMode2D.Force);
