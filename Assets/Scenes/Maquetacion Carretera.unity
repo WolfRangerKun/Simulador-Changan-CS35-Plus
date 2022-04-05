@@ -6887,7 +6887,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9112,7 +9112,7 @@ MonoBehaviour:
     dialogo: "Hola futuro due\xF1o."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Una de las cosas que debes saber de mi es que soy ecologco.
+    dialogo: Una de las cosas que debes saber de mi es que soy ecologico.
     retrato: {fileID: 0}
   - nombre: Changansito
     dialogo: "Pues el como funciona mi motor logra una menor contaminaci\xF3n."
@@ -9142,7 +9142,7 @@ MonoBehaviour:
     dialogo: 10
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: "Genial, ahora la podr\xE1s disfrutar de GPS y musica personalizada."
+    dialogo: "Genial, ahora ya podr\xE1s disfrutar de GPS y musica personalizada."
     retrato: {fileID: 0}
   - nombre: Changansito
     dialogo: Lo mejor para un viaje comodo.

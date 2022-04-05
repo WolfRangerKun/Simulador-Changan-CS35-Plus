@@ -100,7 +100,12 @@ public class AnimationsCorrutina : MonoBehaviour
         DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[23]);
         yield return new WaitUntil(() => DialogueManager.intance.index == 26);
         DialogueManager.intance.HideDialogo();
+        PlayerPrefs.SetInt("CargarMenu 1", 1);
+
         PlayerPrefs.SetInt("CargarMenu 2", 1);
+        PlayerPrefs.SetInt("CargarMenu 3", 0);
+        PlayerPrefs.SetInt("CargarMenu 4", 0);
+
         ChangeScene.intance.CargarNivel(0);
     }
 
@@ -179,6 +184,10 @@ public class AnimationsCorrutina : MonoBehaviour
         //cvCamCarretera.SetActive(false);
         DialogueManager.intance.HideDialogo();
         //PlayerPrefs.SetInt("CargarMenu 2", 1);
+        PlayerPrefs.SetInt("CargarMenu 1", 1);
+
+        PlayerPrefs.SetInt("CargarMenu 2", 1);
+        PlayerPrefs.SetInt("CargarMenu 3", 1);
         PlayerPrefs.SetInt("CargarMenu 4", 1);
         ChangeScene.intance.CargarNivel(0);
     }
@@ -191,7 +200,7 @@ public class AnimationsCorrutina : MonoBehaviour
 
 
         GameObject thisDialogue = GameObject.Find("DialogoInicio");
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         DialogueManager.intance.dialogos = thisDialogue.GetComponent<Dialogos>().thisDialogue;
 
         DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[0]);
@@ -226,18 +235,22 @@ public class AnimationsCorrutina : MonoBehaviour
         yield return new WaitUntil(() => DialogueManager.intance.index == 13);
         DialogueManager.intance.HideDialogo();
         yield return new WaitForSeconds(.1f);
-        yield return new WaitUntil(() => GameManagerGabo.instance.contadorPunto == 1);
-        // llega al punto A
+        yield return new WaitUntil(() => GameManagerGabo.instance.oneI == true);
+
         cvCamInicio.SetActive(true);
-        yield return new WaitForSeconds(1.2f);
 
         DialogueManager.intance.index = 14;
         DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[14]);
         yield return new WaitUntil(() => DialogueManager.intance.index == 17);
         cvCamInicio.SetActive(false);
+        DialogueManager.intance.HideDialogo();
+        yield return new WaitWhile(() => GameManagerGabo.instance.dosI == false);
 
-        yield return new WaitUntil(() => GameManagerGabo.instance.contadorPunto == 2);
-        //llega punto B
+        print("LL");
+        //yield return new WaitWhile(() => GameManagerGabo.instance.dosI == true);
+        print("LL2");
+
+        //yield return new WaitWhile(() => GameManagerGabo.instance.dosI == true);
 
         cvCamInicio.SetActive(true);
 
@@ -247,7 +260,11 @@ public class AnimationsCorrutina : MonoBehaviour
         //cvCamCarretera.SetActive(false);
         DialogueManager.intance.HideDialogo();
         //PlayerPrefs.SetInt("CargarMenu 2", 1);
+        PlayerPrefs.SetInt("CargarMenu 1", 1);
+
+        PlayerPrefs.SetInt("CargarMenu 2", 1);
         PlayerPrefs.SetInt("CargarMenu 3", 1);
+        PlayerPrefs.SetInt("CargarMenu 4", 0);
         ChangeScene.intance.CargarNivel(0);
     }
 }

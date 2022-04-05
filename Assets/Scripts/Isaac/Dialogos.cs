@@ -12,26 +12,29 @@ public class Dialogos : MonoBehaviour
     {
         if (isMenu)
         {
-            if (PlayerPrefs.GetInt("CargarMenu 2") == 0 && PlayerPrefs.GetInt("CargarMenu 3") == 0 && PlayerPrefs.GetInt("CargarMenu 4") == 0 && !isOne)
-            {
-                this.gameObject.SetActive(false);
-            }
-            else if (PlayerPrefs.GetInt("CargarMenu 2") == 1 && PlayerPrefs.GetInt("CargarMenu 3") == 0 && PlayerPrefs.GetInt("CargarMenu 4") == 0 && !isTwo)
-            {
-                this.gameObject.SetActive(false);
 
-            }
-            else if (PlayerPrefs.GetInt("CargarMenu 2") == 1 && PlayerPrefs.GetInt("CargarMenu 3") == 1 && PlayerPrefs.GetInt("CargarMenu 4") == 0 && !isTree)
+            if (PlayerPrefs.GetInt("CargarMenu 1") == 1 && PlayerPrefs.GetInt("CargarMenu 2") == 0 && PlayerPrefs.GetInt("CargarMenu 4") == 0 && PlayerPrefs.GetInt("CargarMenu 3") == 0 && !isOne)
             {
                 this.gameObject.SetActive(false);
-
             }
-            else if (PlayerPrefs.GetInt("CargarMenu 2") == 1 && PlayerPrefs.GetInt("CargarMenu 3") == 1 && PlayerPrefs.GetInt("CargarMenu 4") == 1 && !isFor)
+
+            if (PlayerPrefs.GetInt("CargarMenu 1") == 1 && PlayerPrefs.GetInt("CargarMenu 2") == 1 && PlayerPrefs.GetInt("CargarMenu 3") == 0 && PlayerPrefs.GetInt("CargarMenu 4") == 0 && !isTwo)
             {
                 this.gameObject.SetActive(false);
 
             }
 
+            if (PlayerPrefs.GetInt("CargarMenu 1") == 1 && PlayerPrefs.GetInt("CargarMenu 2") == 1 && PlayerPrefs.GetInt("CargarMenu 3") == 1 && PlayerPrefs.GetInt("CargarMenu 4") == 0 && !isTree)
+            {
+                this.gameObject.SetActive(false);
+
+            }
+
+            if (PlayerPrefs.GetInt("CargarMenu 1") == 1 && PlayerPrefs.GetInt("CargarMenu 2") == 1 && PlayerPrefs.GetInt("CargarMenu 3") == 1 && PlayerPrefs.GetInt("CargarMenu 4") == 1 && !isFor)
+            {
+                this.gameObject.SetActive(false);
+
+            }
 
 
             //if (!isOne && PlayerPrefs.GetInt("CargarMenu 2") != 1)
@@ -57,13 +60,15 @@ public class Dialogos : MonoBehaviour
     }
     private void Start()
     {
-        
-        DialogueManager.intance.dialogos = thisDialogue;
+            DialogueManager.intance.dialogos = thisDialogue;
+
         if (isMenu)
         {
-            
-            DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[0]);
 
+            DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[0]);
         }
     }
+
+
+    
 }

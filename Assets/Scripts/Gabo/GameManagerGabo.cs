@@ -7,7 +7,7 @@ public class GameManagerGabo : MonoBehaviour
 {
     public static GameManagerGabo instance;
     public  int contadorPunto;
-
+    public bool oneI, dosI;
 
     private void Awake()
     {
@@ -23,6 +23,20 @@ public class GameManagerGabo : MonoBehaviour
         {
 
         }
+    }
+
+    public void OnEdd()
+    {
+        oneI = true;
+    }
+    public void DosEdd()
+    {
+        dosI = true;
+    }
+
+    public void DosEddss()
+    {
+        dosI = false;
     }
 
     public void AddIntContador()
