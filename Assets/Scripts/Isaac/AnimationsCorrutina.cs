@@ -7,6 +7,14 @@ public class AnimationsCorrutina : MonoBehaviour
     public bool canContinue, isCarretera, isRocas, isCiudad;
     public GameObject guiaVisual ;
 
+    private void Awake()
+    {
+        if (isCiudad)
+        {
+            guiaVisual.SetActive(false);
+
+        }
+    }
     void Start()
     {
         if (isCarretera)
@@ -17,6 +25,11 @@ public class AnimationsCorrutina : MonoBehaviour
         if (isRocas)
         {
             StartCoroutine(RocasCorrutine());
+
+        }
+        if (isCiudad)
+        {
+            StartCoroutine(UrbanoCorrutine());
 
         }
     }
@@ -163,6 +176,64 @@ public class AnimationsCorrutina : MonoBehaviour
         DialogueManager.intance.HideDialogo();
         //PlayerPrefs.SetInt("CargarMenu 2", 1);
         PlayerPrefs.SetInt("CargarMenu 4", 1);
+        ChangeScene.intance.CargarNivel(0);
+    }
+
+    IEnumerator UrbanoCorrutine()
+    {
+        GameObject cvCamInicio = GameObject.Find("CM Inicio");
+        GameObject cvCamGame = GameObject.Find("CM GAME");
+        GameObject cvCamRueda = GameObject.Find("CM Rueda");
+
+
+        GameObject thisDialogue = GameObject.Find("DialogoInicio");
+        yield return new WaitForSeconds(2);
+        DialogueManager.intance.dialogos = thisDialogue.GetComponent<Dialogos>().thisDialogue;
+
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[0]);
+
+        yield return new WaitUntil(() => DialogueManager.intance.index == 3);
+        DialogueManager.intance.HideDialogo();
+        yield return new WaitForSeconds(.5f);
+
+        cvCamInicio.SetActive(false);
+        yield return new WaitForSeconds(.7f);
+        DialogueManager.intance.index = 3;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[3]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 5);
+        DialogueManager.intance.HideDialogo();
+
+        cvCamInicio.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        DialogueManager.intance.index = 6;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[6]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 7);
+        DialogueManager.intance.HideDialogo();
+        yield return new WaitForSeconds(.1f);
+
+
+        cvCamInicio.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        guiaVisual.SetActive(true);
+        RaycastMovementDetection.instance.marcoContador.gameObject.SetActive(true);
+
+        RaycastMovementDetection.instance.contador.gameObject.SetActive(true);
+        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.5f);
+        RaycastMovementDetection.instance.start = true;
+
+        //yield return new WaitUntil(() => RaycastMovementDetection.instance.win == true);
+
+        cvCamInicio.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+
+        DialogueManager.intance.index = 8;
+        DialogueManager.intance.ShowDialogo(DialogueManager.intance.dialogos[8]);
+        yield return new WaitUntil(() => DialogueManager.intance.index == 11);
+        //cvCamCarretera.SetActive(false);
+        DialogueManager.intance.HideDialogo();
+        //PlayerPrefs.SetInt("CargarMenu 2", 1);
+        PlayerPrefs.SetInt("CargarMenu 3", 1);
         ChangeScene.intance.CargarNivel(0);
     }
 }
