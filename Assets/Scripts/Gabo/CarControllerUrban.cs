@@ -12,7 +12,8 @@ public class CarControllerUrban : MonoBehaviour
     public float directionRay;
     public LayerMask trafficLight;
     public bool move;
-    public UnityEvent canvasShow, canvasOut;
+    public Semaphore semaphore;
+    //public UnityEvent canvasShow, canvasOut;
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -70,6 +71,7 @@ public class CarControllerUrban : MonoBehaviour
     public void ChangeOritacion(int angle)
     {
         transform.eulerAngles = new Vector3(0, angle, 0);
+        
     }
 
     public void DetectionSemaforo()
@@ -80,16 +82,16 @@ public class CarControllerUrban : MonoBehaviour
         if (Physics.Raycast(transform.position, direction, out hit, directionRay, trafficLight) && move)
         {
             //hit.collider.GetComponent<BoxCollider>();
+            move = false;
             directionNumer = 0;
             direction = direction.normalized;
-            canvasShow?.Invoke();
-            move = false;
-            
+            semaphore = hit.collider.GetComponent<Semaphore>();
+            semaphore.ActiveButtons();
+            hit.collider.GetComponent<BoxCollider>().enabled = false;
         }
         else
         {
             direction = direction.normalized;
-            canvasOut?.Invoke();
             move = true;
         }
     }
