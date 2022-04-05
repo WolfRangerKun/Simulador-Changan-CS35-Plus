@@ -8,6 +8,9 @@ TagManager:
   - MainsCamerasCM
   - Limite
   - Bar
+  - forward
+  - left
+  - right
   layers:
   - Default
   - TransparentFX
