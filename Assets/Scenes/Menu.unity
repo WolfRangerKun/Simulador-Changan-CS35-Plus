@@ -436,17 +436,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisDialogue:
   - nombre: Changansito
-    dialogo: Hola amigo, soy changansito
+    dialogo: Hola amigo, soy el CS 35 Plus.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: En esta aplicacion te demostrare que soy el auto que necesitas, asi
-      que no te pierdas nada.
+    dialogo: Pero me puedes decir Changan.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Para empezar, apreta con el mouse el boton que dice nivel 1
+    dialogo: En este simulador te demostrare en base a 3 cosas.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Te espero para empezar.
+    dialogo: Que soy el auto que necesitas en la vida.
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: Para empezar, te espero en el nivel 1.
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: "\xA1Vamos!"
     retrato: {fileID: 0}
   isMenu: 1
   isOne: 1
@@ -649,7 +654,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 76900dfe0d15dc34fb621e6ab0cf8466, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1641,13 +1646,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisDialogue:
   - nombre: Changansito
-    dialogo: Genial ahora vamos a otro lugar
+    dialogo: La confianza es super importante en un auto como yo.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: No te asustes, este te resultara familiar
+    dialogo: Es la base de cualquier SUV que se respete.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Apretale al nivel 2
+    dialogo: Pero bueno, mejor pasemos al siguiente nivel para seguir hablando de
+      mi.
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: "\xA1Que esperas!"
     retrato: {fileID: 0}
   isMenu: 1
   isOne: 0
@@ -2593,16 +2602,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisDialogue:
   - nombre: Changansito
-    dialogo: Eso seria todo pues
+    dialogo: "As\xED, terminamos el simulador."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Espero te haya convencido de que mi compania sera la mejor
+    dialogo: Espero que con lo mostrado me quede en tu cabeza.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Y si no, tu te lo pierdes jajaja
+    dialogo: "As\xED, puede que nos veamos de manera prencencial."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Espero nos estemos viendo en alguna consecionaria.
+    dialogo: "Te estar\xE9 esperando en cualquier Consecionaria Derco."
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: "Aqu\xED me despido, nos estamos viendo amigo."
+    retrato: {fileID: 0}
+  - nombre: Changansito
+    dialogo: "Adi\xF3s."
     retrato: {fileID: 0}
   isMenu: 1
   isOne: 0
@@ -2822,16 +2837,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisDialogue:
   - nombre: Changansito
-    dialogo: Te imaginaste en la ciudad?
+    dialogo: Que te parecio esta ayuda que te entrego.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Pues deberias, con esas ayudas que doy, uff
+    dialogo: "Te sacar\xE9 de m\xE1s de un apuro con lo mostrado."
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Ahora, nos toca la ultima prueba...
+    dialogo: Pero bueno, estamos llegando al nivel final.
     retrato: {fileID: 0}
   - nombre: Changansito
-    dialogo: Preparate
+    dialogo: Espero que esta caracteristica tambien te guste.
     retrato: {fileID: 0}
   isMenu: 1
   isOne: 0

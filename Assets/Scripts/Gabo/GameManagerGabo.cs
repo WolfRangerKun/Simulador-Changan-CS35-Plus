@@ -5,8 +5,14 @@ using UnityEngine.Events;
 
 public class GameManagerGabo : MonoBehaviour
 {
-    public static int contadorPunto;
+    public static GameManagerGabo instance;
+    public  int contadorPunto;
 
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Update()
     {
         if(contadorPunto == 1)
@@ -17,5 +23,10 @@ public class GameManagerGabo : MonoBehaviour
         {
 
         }
+    }
+
+    public void AddIntContador()
+    {
+        contadorPunto++;
     }
 }
