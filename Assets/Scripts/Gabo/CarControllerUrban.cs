@@ -13,10 +13,12 @@ public class CarControllerUrban : MonoBehaviour
     public LayerMask trafficLight;
     public bool move;
     public Semaphore semaphore;
+    public Animator anim;
     //public UnityEvent canvasShow, canvasOut;
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     public void Update()
@@ -44,21 +46,26 @@ public class CarControllerUrban : MonoBehaviour
             case 1:
                 Debug.Log("hacia adelante");
                 direction = transform.TransformDirection(Vector3.forward);
-                rb.velocity = direction * speed * Time.deltaTime;
+                //rb.velocity = direction * speed * Time.deltaTime;
                 //rb.AddForce(direction * speed * Time.deltaTime);
-                
+                rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
+                anim.SetTrigger("Idle");
                 break;
             case 2:
                 Debug.Log("hacia la derecha");
-                direction = Vector3.right;
-                rb.velocity = direction * speed * Time.deltaTime;
+                direction = transform.TransformDirection(Vector3.forward);
+                //rb.velocity = direction * speed * Time.deltaTime;
                 //rb.AddForce(direction * speed * Time.deltaTime);
+                rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
+                anim.SetTrigger("Idle");
                 break;
             case 3:
                 Debug.Log("hacia la izquierda");
-                direction = Vector3.left;
-                rb.velocity = direction * speed * Time.deltaTime;
+                direction = transform.TransformDirection(Vector3.forward);
+                //rb.velocity = direction * speed * Time.deltaTime;
                 //rb.AddForce(direction * speed * Time.deltaTime);
+                rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
+                anim.SetTrigger("Idle");
                 break;
         }
     }
