@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1892083345145105366}
   - component: {fileID: 5779986863389874319}
   - component: {fileID: 8012502699579096664}
-  - component: {fileID: 2450546581216251121}
+  - component: {fileID: 3947048889542881729}
   m_Layer: 0
   m_Name: Crossroads_1_lines_walk
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2450546581216251121
-MeshCollider:
+--- !u!65 &3947048889542881729
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +94,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6134378622977873696, guid: 8f631a0560592c44890f879375e84e52, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 4.9999995, y: 0.08289387, z: 5.0000014}
+  m_Center: {x: -2.4999998, y: -0.14515725, z: 2.4999995}

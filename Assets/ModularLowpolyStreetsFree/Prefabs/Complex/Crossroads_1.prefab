@@ -439,7 +439,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pole_light
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4872952173619508442, guid: a86700941998d83419a81fe06b94fc4e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a86700941998d83419a81fe06b94fc4e, type: 3}
 --- !u!4 &4007516587597508062 stripped
 Transform:
@@ -625,7 +626,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 403382870701093475, guid: 687bed6654853fc48b16eb6a7e6d22de, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 687bed6654853fc48b16eb6a7e6d22de, type: 3}
 --- !u!4 &888851471215224461 stripped
 Transform:
@@ -1493,7 +1495,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5546174547426865818, guid: 7317ac3dc606f5c419e9a81b2156c33f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7317ac3dc606f5c419e9a81b2156c33f, type: 3}
 --- !u!4 &4904066898218328187 stripped
 Transform:
